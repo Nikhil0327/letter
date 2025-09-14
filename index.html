@@ -1,8 +1,42 @@
-<button onclick="openLetter()">💌Click Me..</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Letter</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+
+  button {
+    font-size: 2rem; /* bigger size */
+    padding: 20px 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    background-color: #ff69b4;
+    color: white;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+
+  button:hover {
+    background-color: #ff85c1;
+    transform: scale(1.1);
+  }
+</style>
+</head>
+<body>
+
+<button onclick="openLetter()">💌 Read the Letter</button>
 
 <script>
   function openLetter() {
-    var password = "chinni";
+    var password = "mygift2025"; 
     var entered = prompt("Enter password to open the letter:");
     if (entered === password) {
       window.location.href = "letter.html";
@@ -11,3 +45,6 @@
     }
   }
 </script>
+
+</body>
+</html>
